@@ -3,7 +3,7 @@
 Implementing some of the most popular command line utilities, in golang!
 
 - [x] wc
-- [ ] cat
+- [x] cat
 - [ ] sort
 - [ ] uniq
 - [ ] grep
