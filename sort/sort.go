@@ -14,6 +14,12 @@ func main() {
 	numericFlag := flag.Bool("n", false, "compare according to string numerical value")
 	uniqueFlag := flag.Bool("u", false, "output only the first of an equal run")
 	outputFlag := flag.String("o", "", "write result to output file")
+
+	flag.Usage = func() {
+		fmt.Fprintf(os.Stderr, "Usage: %s [OPTIONS] [FILE]...]\n", os.Args[0])
+		flag.PrintDefaults()
+	}
+
 	flag.Parse()
 
 	var lines []string
