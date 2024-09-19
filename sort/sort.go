@@ -14,6 +14,7 @@ func main() {
 	numericFlag := flag.Bool("n", false, "compare according to string numerical value")
 	uniqueFlag := flag.Bool("u", false, "output only the first of an equal run")
 	outputFlag := flag.String("o", "", "write result to output file")
+	flag.Parse()
 
 	var lines []string
 	scanner := bufio.NewScanner(os.Stdin)
